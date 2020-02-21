@@ -1,0 +1,26 @@
+1. What is the difference in an started service and a bound service?
+Started services will run until they complete a task and then stop afterwards, unless they are stopped manually.
+Bound services will run until they are unbound.
+
+2. Define what a observer/ subscriber relation is.
+There is an object that is an Observer, and the subscribers will be notified about the changes/messages of
+what the Observer is keeping track of.
+
+3. Define what a client/server relation is.
+There is one server and several clients, and the server hold and processes info. Clients can request data from the server
+and the server can accept these requests, process them and return the data to the client.
+
+4. Define each of the HTTP verbs
+POST - It is mostly associated with the CRUD create method, and is used to create the resource.
+GET - To retrieve/read the resource.
+PUT - Related to update, it will place the resource, replacing/updating if applicable.
+PATCH - It is similar to put, but it only updates and modifies an already present resource.
+DELETE - This deletes a resource.
+
+5. Describe at least one use for each service (Foreground, Background, Intent, Bound)
+Foreground - Continuous service that notifies the user what it's up to, ala Spotify.
+Background - Indexing, processing or collecting data, stuff the user wouldn't have to see.
+Intent - Can be used to process services you don't want processed on the main thread, and
+start as needed. Could be used for a live score board.
+Bound - A process that has a client-server interface. Something like this would be a customer support
+chat system.
