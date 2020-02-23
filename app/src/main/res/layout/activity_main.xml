@@ -8,12 +8,12 @@
     tools:context=".MainActivity">
     <Button
         android:id="@+id/btnStartService"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
-        android:background="@color/colorAccent"
+        android:background="#000000"
         android:padding="16dp"
         android:text="Play Music"
         android:textColor="#fff"
@@ -27,7 +27,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:background="#000000"
         android:text="Show Jojos"
+        android:textColor="#fff"
         app:layout_constraintTop_toBottomOf="@id/btnStartService"
         android:onClick="onClick"
         />
@@ -38,6 +40,90 @@
         android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@id/btnPopulateRecyclerVeiw"
         />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <Button
+                android:id="@+id/btnWifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#000000"
+                android:text="Wifi"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                app:layout_constraintTop_toBottomOf="@id/btnStartService"
+                android:onClick="onClick"
+                />
+            <Button
+                android:id="@+id/btnPlaneMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#000000"
+                android:text="Plane Mode"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                app:layout_constraintTop_toBottomOf="@id/btnStartService"
+                android:onClick="onClick"
+                />
+            <Button
+                android:id="@+id/btnTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#000000"
+                android:text="Time"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                app:layout_constraintTop_toBottomOf="@id/btnStartService"
+                android:onClick="onClick"
+                />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        <Button
+            android:id="@+id/btnLocale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:text="Locale"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            app:layout_constraintTop_toBottomOf="@id/btnStartService"
+            android:onClick="onClick"
+            />
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:text="Camera"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            app:layout_constraintTop_toBottomOf="@id/btnStartService"
+            android:onClick="onClick"
+            />
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
